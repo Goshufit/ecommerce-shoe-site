@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p { 
+   margin: 0;
+
+}
+
+.container {
+    width: 85%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.spacing >*+* {
+    margin-top: var(--spacer, 32px);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: var(--clr-accent, blue);
+    color: var(--clr-text, white);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.primary-title {
+    font-size: 64px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    color: #17353d;
+
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 240px 0px;
+    background-blend-mode: multiply;
+    background-image: url(VSimg/shoe\ 1.png),
+    radial-gradient( #444, #111);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+      
+}
