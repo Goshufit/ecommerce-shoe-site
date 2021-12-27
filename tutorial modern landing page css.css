@@ -140,6 +140,7 @@ section {
 
 .Featured__Details {
     opacity: 0;
+    text-shadow: 0 0 32px rgba(#fff, 1);
 }
 
 .Featured__Details span {
@@ -148,3 +149,22 @@ section {
     font-size: 40px;
 }
 
+.product {
+    background: radial-gradient(var(--clr-inner, limegreen),var(--clr-outer,purple));
+    padding: 48px;
+    border-radius: 48px;
+    margin-bottom: 48px;
+}
+
+.product__title{
+    font-size: 64px;
+    line-height: 1.1;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 .32px rgba( #000, .2)
+}
+
+.shoe-red {
+    --clr-inner: red;
+    --clr-outer: orange;
+}
