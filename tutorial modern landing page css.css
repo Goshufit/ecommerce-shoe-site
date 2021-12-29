@@ -93,7 +93,7 @@ section {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position-y: center center;
-    
+    --clr-accent: #faa700;
       
 }
 
@@ -154,17 +154,60 @@ section {
     padding: 48px;
     border-radius: 48px;
     margin-bottom: 48px;
+    text-align: center;
 }
 
 .product__title{
     font-size: 64px;
-    line-height: 1.1;
-    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
     color: #fff;
     text-shadow: 0 0 .32px rgba( #000, .2)
 }
 
+.product__image {
+    margin: -10em 0 0 0;
+}
+
+
+@media (min-width: 720px) {
+    margin-bottom: 144px;
+    text-align: left;
+    .primary-title{
+        margin: 0;
+        font-size: clamp(48px, calc(5vw + 16px), 88px);
+    }
+    .product__image{
+    float: right;
+    width: 65%;
+    shape-outside: url(../VSimg/shoe\ 4.png);
+    shape-margin: 16px;
+    margin: 0 -80px 0 0;
+    
+    .product .shoe-left .product__image {
+    shape-outside: url(../VSimg/shoe\ 5.png);
+    float: left;
+    margin: 0 0 0 -80px;
+    shape-margin: 32px;
+}
+}
+
+
+
 .shoe-red {
-    --clr-inner: red;
-    --clr-outer: orange;
+    --clr-inner: #faa700;
+    --clr-outer: #e48d00;
+    --clr-accent: #a1173c;
+}
+
+.shoe-white {
+    --clr-inner: #fce4b3;
+    --clr-outer: #eac886;
+    --clr-accent: #2f4858;
+}
+
+.shoe-blue {
+    --clr-inner: #6dd5ed;
+    --clr-outer: #2193b0;
+    --clr-accent: #008951;
 }
